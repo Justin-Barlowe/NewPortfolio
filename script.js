@@ -21,3 +21,15 @@ const darkModeToggle = document.getElementById("darkModeToggle");
             // Toggle the text inside the <span>
             themeText.innerText = (theme === "dark") ? "Light Mode" : "Dark Mode";
         });
+
+    
+
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            const menuItems = document.querySelector('nav .right');
+            if (menuItems.style.display === 'none' || menuItems.style.display === '') {
+                menuItems.style.display = 'flex';
+            } else {
+                menuItems.style.display = 'none';
+            }
+        });
+        

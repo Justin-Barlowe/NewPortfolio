@@ -307,7 +307,7 @@
     }
   
     nav .right a span {
-      display: none;
+      width: auto;
     }
   
     /* SECTION 1: Hero */
@@ -512,4 +512,42 @@
   margin: 0 auto;
   margin-top: 20px;
   flex: 1;
+}
+
+/* Style for the hamburger button */
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+}
+
+/* By default, hide the menu items */
+nav .right {
+  display: flex;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+  .hamburger {
+      display: block; /* Show hamburger on small screens */
+  }
+
+  /* Initially hide the menu on smaller screens */
+  nav .right {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px; /* Adjust based on your navbar height */
+      right: 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      z-index: 2;
+  }
+
+  nav .right a {
+      margin: 10px;
+  }
 }
