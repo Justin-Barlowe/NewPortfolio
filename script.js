@@ -1,3 +1,4 @@
+// Dark Mode
 const darkModeToggle = document.getElementById("darkModeToggle");
         const themeText = document.getElementById("themeText");
         const currentTheme = localStorage.getItem("theme");
@@ -23,7 +24,7 @@ const darkModeToggle = document.getElementById("darkModeToggle");
         });
 
     
-
+// Hamburger Menu
         document.querySelector('.hamburger').addEventListener('click', function() {
             const menuItems = document.querySelector('nav .right');
             if (menuItems.style.display === 'none' || menuItems.style.display === '') {
