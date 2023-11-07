@@ -368,7 +368,7 @@
 /* Optional: Style for the dropdown button */
 .dropbtn {
     background-color: transparent;
-    color: white; /* Or whatever color your other links are */
+    color: white; 
     padding: 16px;
     border: none;
     cursor: pointer;
