@@ -551,13 +551,13 @@ nav .right {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 15px; 
+  gap: 20px; /* Provides some space between the cards */
 }
 
 .education-card {
   flex: 1;
-  min-width: 250px; 
-  max-width: 45%; 
+  min-width: 250px; /* Minimum width before card wraps to next line */
+  max-width: 45%; /* Adjust based on preference, ensuring two cards fit side by side */
   background-color: var(--card-background-color);
   border-radius: 10px;
   padding: 20px;
@@ -569,13 +569,56 @@ nav .right {
   margin-bottom: 15px;
 }
 
-.education-card:hover {
-  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+/* Contact Section */
+.contact-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
 }
 
-@media (max-width: 768px) {
-  .education-card {
-    max-width: 100%; /* Allows the card to expand to full container width */
-    margin-bottom: 20px; /* Adds more space between stacked cards */
-  }
+.contact-section h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+#contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: var(--link-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: darken(var(--link-color), 10%);
 }

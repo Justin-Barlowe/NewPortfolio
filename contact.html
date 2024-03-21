@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Justin Barlowe</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="left">
+            <a href="index.html">Justin Barlowe</a>
+        </div>
+        <nav>
+            <button class="hamburger">&#9776;</button>
+        </nav>
+        
+        <div class="right">
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="projects.html">
+                <i class="fa-solid fa-code"></i>
+                <span>Projects</span>
+            </a>
+            <a href="api.html">
+                <i class="fa-solid fa-network-wired"></i>
+                <span>API Unit Tests</span>
+            </a>
+            <a href="JustinBarloweResume2023.docx">
+                <i class="fa-solid fa-file"></i>
+                <span>Resume</span>
+            </a>
+            <a href="#" id="darkModeToggle">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+                <span id="themeText">Dark Mode</span>
+            </a>
+
+        </div>
+    </nav>
+    <main>
+        <!-- Contact Card -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn">Send</button>
+            </form>
+            <div id="message"></div>
+          </section>
+    </main>
+    <script src="https://kit.fontawesome.com/9aac8842ea.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
