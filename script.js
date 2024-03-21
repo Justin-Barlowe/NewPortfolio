@@ -32,3 +32,8 @@ document.querySelector(".hamburger").addEventListener("click", function () {
     menuItems.style.display = "none";
   }
 });
+
+// Particle JS Config
+particlesJS.load('particles-js', 'assets/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
