@@ -546,3 +546,36 @@ nav .right {
   left: 0;
   z-index: -1; /* Puts the particles behind your content */
 }
+
+.education-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px; 
+}
+
+.education-card {
+  flex: 1;
+  min-width: 250px; 
+  max-width: 45%; 
+  background-color: var(--card-background-color);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.education-card h3, .education-card p {
+  margin-bottom: 15px;
+}
+
+.education-card:hover {
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .education-card {
+    max-width: 100%; /* Allows the card to expand to full container width */
+    margin-bottom: 20px; /* Adds more space between stacked cards */
+  }
+}
