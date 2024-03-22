@@ -618,7 +618,3 @@ nav .right {
   font-family: 'Poppins', sans-serif;
   transition: background-color 0.3s;
 }
-
-.btn:hover {
-  background-color: darken(var(--link-color), 10%);
-}

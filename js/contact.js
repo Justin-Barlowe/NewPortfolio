@@ -7,13 +7,7 @@
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission behavior
-
-    // Check if reCAPTCHA is filled
-    if (grecaptcha.getResponse() === "") {
-        alert("Please verify the reCAPTCHA");
-        return;
-    }
-
+    
     // Send the form data using EmailJS
     emailjs.sendForm('service_g6iomdn', 'template_u4gg8oa', this)
         .then(function() {
