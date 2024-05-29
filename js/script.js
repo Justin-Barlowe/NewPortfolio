@@ -3,11 +3,13 @@ const darkModeToggle = document.getElementById("darkModeToggle");
 const themeText = document.getElementById("themeText");
 const currentTheme = localStorage.getItem("theme");
 
+// Set theme
 if (currentTheme) {
   document.documentElement.setAttribute("data-theme", currentTheme);
   themeText.innerText = currentTheme === "dark" ? "Light Mode" : "Dark Mode"; // Update text based on stored theme.
 }
 
+// Dark mode toggle
 darkModeToggle.addEventListener("click", function (event) {
   event.preventDefault();
 
@@ -24,6 +26,7 @@ darkModeToggle.addEventListener("click", function (event) {
 });
 
 // Hamburger Menu
+// Need to correct colors on mobile view. 
 document.querySelector(".hamburger").addEventListener("click", function () {
   const menuItems = document.querySelector("nav .right");
   if (menuItems.style.display === "none" || menuItems.style.display === "") {

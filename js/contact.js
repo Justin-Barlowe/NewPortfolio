@@ -5,6 +5,7 @@
     emailjs.init("3zPZXD5tqx9I5VpsQ"); // Initialize EmailJS with your user ID
 })();
 
+// Send the contact form data
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission behavior
     
